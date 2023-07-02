@@ -1,0 +1,11 @@
+import json
+import requests
+
+name = input('Введите ваше имя латинскими буквами ')
+email = input('Введите ваш email ')
+x = {
+    'name' : name,
+    'email' : email
+}
+y = json.dumps(x)
+print(y)
